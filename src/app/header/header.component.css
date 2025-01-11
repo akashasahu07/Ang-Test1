@@ -1,0 +1,12 @@
+span {
+    background-color: #fdb628;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.header1 {
+    background-color: #d7f3fe;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
