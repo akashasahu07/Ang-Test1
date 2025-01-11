@@ -6,7 +6,41 @@ span {
 
 .header1 {
     background-color: #d7f3fe;
-    padding: 5px;
+    padding: 5px 5px 5px 50px;
     border-radius: 5px;
-    text-align: center;
+    text-align: left;
+    line-height: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.header2 {
+    background-color: #d8fdcb;
+    padding: 5px 5px 5px 50px;
+    border-radius: 5px;
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.text {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fbbc3e;
+}
+
+img {
+    mix-blend-mode: multiply;
 }

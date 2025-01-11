@@ -4,3 +4,21 @@
     <h2>My age is <span>{{ age * 2 - 10}}</span></h2>
     <h3>My age is <span>15 * 2 - 10</span></h3>
 </div>
+
+<div class="header2">
+    <div class="img"><img src='{{ image }}' width="200"></div>
+    <div class="text">
+        <!--This is String Interpolation-->
+        <h2>Name: <span>{{ phone }}</span></h2>
+        <h2>Price: <span>{{ price }}</span>&#8377;
+        </h2>
+        <h2>Discounted Price: <span>{{ price - (price * discount / 100) }}</span>&#8377;
+        </h2>
+        <h2><span>{{ stock }}</span> left in Stock</h2>
+
+        <!--This is Event Binding-->
+        <input type="text" [value]="rating" disabled> <br>
+
+        <button [disabled] = "(stock == 0) ? true:false">Buy Now</button>
+    </div>
+</div>
