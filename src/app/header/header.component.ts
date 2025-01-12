@@ -12,10 +12,11 @@ export class HeaderComponent {
   age: number = 15
 
   // Header 2
-  phone: string = 'Iphone 15 Plus'
+  phone: string = 'iPhone 15 Plus'
   price: number = 70000
   discount: number = 10
-  stock: number = 5
+  stock: number = 10
   image: string = 'https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70&crop=false'
   rating: number = 5
+  feedback:string = 'Good Phone'
 }

@@ -43,4 +43,9 @@ button:hover {
 
 img {
     mix-blend-mode: multiply;
+    padding-top: 25px;
+}
+
+input {
+    border-radius: 5px;
 }
