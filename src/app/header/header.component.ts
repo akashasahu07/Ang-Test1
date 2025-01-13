@@ -18,5 +18,9 @@ export class HeaderComponent {
   stock: number = 10
   image: string = 'https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/j/z/3/-original-imagtc5fqyz8tu4c.jpeg?q=70&crop=false'
   rating: number = 5
-  feedback:string = 'Good Phone'
+  feedback:string = ''
+
+  ChangeFeedback(event:any) {
+    this.feedback = event.target.value
+  }
 }
