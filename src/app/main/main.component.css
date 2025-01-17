@@ -1,18 +1,22 @@
 .container {
     height: fit-content;
     padding: 5px 50px;
-    background-color: #ffc0f8;
     border-radius: 5px;
     border: 2px solid #a1a1a1;
+    margin-bottom: 5px;
 }
 
-input,
+.class1 {
+    background-color: #ffc0f8;
+} 
+
+.class1 input,
 button {
     border: none;
     padding: 10px;
 }
 
-button {
+.class1 button {
     cursor: pointer;
     background-color: aquamarine;
     font-weight: bold;
@@ -20,17 +24,26 @@ button {
     border-bottom-right-radius: 5px;
 }
 
-input {
+.class1 input {
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
-button:hover {
+.class1 button:hover {
     background-color: #c7ff6d;
 }
 
 .search-bar {
     border: 2px solid gray;
     width: fit-content;
+    border-radius: 5px;
+}
+
+.class2 {
+    background-color: #e7f9ad;
+}
+
+.class2 input {
+    padding: 10px;
     border-radius: 5px;
 }
