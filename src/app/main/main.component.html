@@ -9,6 +9,38 @@
 
 <div class="container class2">
     <h2>ngModel</h2>
-    <input type="text" placeholder="Search something..." [(ngModel)] = "search">
+    <input type="text" placeholder="Search something..." [(ngModel)]="search">
     <h3>{{ search }}</h3>
+</div>
+
+<div class="container class3">
+    <h2 title="Directives">Directives</h2>
+    <ul>
+        <li *ngFor="let i of fruits">{{ i }}</li>
+    </ul>
+</div>
+
+<div class="container class4">
+    <h2>Mobile Section</h2>
+    <div class="content" *ngFor='let i of items'>
+        <div class="image">
+            <p><img src="{{i.img}}" alt="iPhone" width="200px"></p>
+        </div>
+
+        <div class="names">
+            <h3>{{ i.name }}</h3>
+            <div class="specs">
+                <ul *ngFor="let spec of i.specs">
+                    <li>{{ spec.first }}</li>
+                    <li>{{ spec.sec }}</li>
+                    <li>{{ spec.third }}</li>
+                    <li>{{ spec.fourth }}</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="price">
+            <h3>&#8377;{{ i.price }}</h3>
+        </div>
+    </div>
 </div>

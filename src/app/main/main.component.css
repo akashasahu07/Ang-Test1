@@ -8,7 +8,7 @@
 
 .class1 {
     background-color: #ffc0f8;
-} 
+}
 
 .class1 input,
 button {
@@ -46,4 +46,40 @@ button {
 .class2 input {
     padding: 10px;
     border-radius: 5px;
+}
+
+.class3 {
+    background-color: #c5f8c0;
+}
+
+.class4 {
+    background-color: #ffdbf9;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.class4 h2 {
+    background-color: #fffb03;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.class4 img {
+    mix-blend-mode: multiply;
+}
+
+.class4 .content {
+    display: flex;
+    gap: 3rem;
+    border: 1px solid #a1a1a1;
+    padding: 0 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #d4fcff;
+}
+
+.specs ul {
+    padding-left: 1.2rem;
 }
