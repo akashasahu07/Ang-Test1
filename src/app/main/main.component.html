@@ -44,3 +44,24 @@
         </div>
     </div>
 </div>
+
+<div class="container class5">
+    <h2>ngIf</h2>
+    <input type="text" placeholder="Search something..." (input)="TextSearch($event)">
+    <h3 *ngIf="searchValue != '' ">You have searched for: {{ searchValue }}</h3>
+</div>
+
+<div class="container class6">
+    <h2>ngSwitch</h2>
+    <input type="number" [(ngModel)]="day" placeholder="Enter day (1-7)" min="1"/>
+        <div [ngSwitch]="day" *ngIf = "day !== null">
+            <h3 *ngSwitchCase=1>Monday</h3>
+            <h3 *ngSwitchCase=2>Tuesday</h3>
+            <h3 *ngSwitchCase=3>Wednesday</h3>
+            <h3 *ngSwitchCase=4>Thursday</h3>
+            <h3 *ngSwitchCase=5>Friday</h3>
+            <h3 *ngSwitchCase=6>Saturday</h3>
+            <h3 *ngSwitchCase=7>Sunday</h3>
+            <h3 *ngSwitchDefault>Wrong Input..</h3>
+        </div>
+</div>

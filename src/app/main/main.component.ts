@@ -1,11 +1,11 @@
-import { NgFor } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-main',
-  imports: [FormsModule, NgFor],  //NgFor is used to render the "ngFor" in template
+  imports: [FormsModule, CommonModule],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -69,4 +69,13 @@ export class MainComponent {
   ]
 
 
+  //ngIf
+  searchValue: string = ''
+
+  TextSearch(event: any) {
+    this.searchValue = event.target.value
+  }
+
+  // ngSwitch
+  day: number | null = null;
 }

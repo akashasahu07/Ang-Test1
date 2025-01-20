@@ -83,3 +83,25 @@ button {
 .specs ul {
     padding-left: 1.2rem;
 }
+
+.class5 {
+    background-color: #ffefd2;
+}
+
+.class5 input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.class6 {
+    background-color: #c6fca9;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.class6 input {
+    padding: 10px;
+    border-radius: 5px;
+}
