@@ -53,15 +53,39 @@
 
 <div class="container class6">
     <h2>ngSwitch</h2>
-    <input type="number" [(ngModel)]="day" placeholder="Enter day (1-7)" min="1"/>
-        <div [ngSwitch]="day" *ngIf = "day !== null">
-            <h3 *ngSwitchCase=1>Monday</h3>
-            <h3 *ngSwitchCase=2>Tuesday</h3>
-            <h3 *ngSwitchCase=3>Wednesday</h3>
-            <h3 *ngSwitchCase=4>Thursday</h3>
-            <h3 *ngSwitchCase=5>Friday</h3>
-            <h3 *ngSwitchCase=6>Saturday</h3>
-            <h3 *ngSwitchCase=7>Sunday</h3>
-            <h3 *ngSwitchDefault>Wrong Input..</h3>
+    <input type="number" [(ngModel)]="day" placeholder="Enter day (1-7)" min="1" />
+    <div [ngSwitch]="day" *ngIf="day !== null">
+        <h3 *ngSwitchCase=1>Monday</h3>
+        <h3 *ngSwitchCase=2>Tuesday</h3>
+        <h3 *ngSwitchCase=3>Wednesday</h3>
+        <h3 *ngSwitchCase=4>Thursday</h3>
+        <h3 *ngSwitchCase=5>Friday</h3>
+        <h3 *ngSwitchCase=6>Saturday</h3>
+        <h3 *ngSwitchCase=7>Sunday</h3>
+        <h3 *ngSwitchDefault>Wrong Input..</h3>
+    </div>
+</div>
+
+<div class="container class7">
+    <h2>Attribute Directives</h2>
+
+    <div class="prod" *ngFor="let product of products">
+        <h3>{{ product.name }}</h3>
+        <h3>{{ product.price }}</h3>
+        <div class="stock" [ngStyle] = "{color : product.inStock ? 'green' : 'red'}">
+            <h4 *ngIf="product.inStock === true"> Available in Stock</h4>
+            <h4 *ngIf="product.inStock != true"> Out of Stock</h4>
         </div>
+    </div>
+</div>
+
+<div class="container class8">
+    <h2>ngClass</h2>
+    <input type="text" (input) = "addText1($event)" placeholder="Write Something...">
+    <button [ngClass] = "{'btn': true, 'btn-disabled': !text1}">Search</button>
+    <h3 *ngIf = "text1 != ''">Showing result for: {{ text1 }}</h3>
+</div>
+
+<div class="container class9">
+    <h2>ng-template</h2>
 </div>

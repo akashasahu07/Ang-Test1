@@ -78,4 +78,32 @@ export class MainComponent {
 
   // ngSwitch
   day: number | null = null;
+
+  // Attribute Derectives
+  products = [
+    {
+      name: 'Mobile',
+      price: 35000,
+      inStock: true
+    },
+
+    {
+      name: 'Laptop',
+      price: 65000,
+      inStock: true
+    },
+
+    {
+      name: 'Keyboard',
+      price: 12000,
+      inStock: false
+    }
+  ]
+
+  // ngClass
+  text1:string = ""
+
+  addText1(event:any) {
+    this.text1 = event.target.value
+  }
 }

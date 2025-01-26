@@ -105,3 +105,41 @@ h2 {
     padding: 10px;
     border-radius: 5px;
 }
+
+.class7 {
+    background-color: #a2ddf8;
+}
+
+.prod {
+    background-color: #f3fff9;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+    border: 2px solid;
+}
+
+.class8 {
+    background-color: #eefcc0;
+}
+
+.class8 .btn {
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.class8 .btn-disabled {
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: not-allowed;
+    display: none;
+}
+
+.class8 input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.class9 {
+    background-color: #f2dbff;
+}
