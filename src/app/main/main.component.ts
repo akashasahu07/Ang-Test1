@@ -101,9 +101,13 @@ export class MainComponent {
   ]
 
   // ngClass
-  text1:string = ""
+  text1: string = ""
 
-  addText1(event:any) {
+  addText1(event: any) {
     this.text1 = event.target.value
   }
+
+  // ng-template
+
+  status = false
 }
