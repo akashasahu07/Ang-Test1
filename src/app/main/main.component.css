@@ -143,3 +143,15 @@ h2 {
 .class9 {
     background-color: #f2dbff;
 }
+
+.class10 {
+    background-color: #d1f1fd;
+}
+
+.class10 button {
+    border-radius: 5px;
+    border: 1px solid;
+    cursor: pointer;
+    background-color: #f5fcc1;
+    font-weight: bold;
+}

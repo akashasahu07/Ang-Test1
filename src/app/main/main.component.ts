@@ -1,14 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { ViewEncapsulation } from '@angular/core';
 
 
 @Component({
   selector: 'app-main',
   imports: [FormsModule, CommonModule],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
   templateUrl: './main.component.html',
-  styleUrl: './main.component.css'
+  styleUrl: './main.component.css',
+  encapsulation: ViewEncapsulation.None
 })
+
 export class MainComponent {
   search: string = ''
   text: string = ''
