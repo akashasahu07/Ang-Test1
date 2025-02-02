@@ -9,7 +9,7 @@ import { ViewEncapsulation } from '@angular/core';
   imports: [FormsModule, CommonModule],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
   templateUrl: './main.component.html',
   styleUrl: './main.component.css',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.Emulated
 })
 
 export class MainComponent {
@@ -113,4 +113,7 @@ export class MainComponent {
   // ng-template
 
   status = false
+
+  // Pipes
+  pipe_text:string = "PiPe TeXT"
 }
