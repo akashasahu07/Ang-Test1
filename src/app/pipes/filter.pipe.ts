@@ -10,5 +10,4 @@ export class FilterPipe implements PipeTransform {
 
     return value.filter(item => typeof item === 'number');
   }
-
 }
