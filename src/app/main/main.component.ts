@@ -115,5 +115,7 @@ export class MainComponent {
   status = false
 
   // Pipes
-  pipe_text:string = "PiPe TeXT"
+  pipe_text: string = "PiPe TeXT"
+  pipe_price: number = 89000
+  pipe_date = "2025-02-03"
 }

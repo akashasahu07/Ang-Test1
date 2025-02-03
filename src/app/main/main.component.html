@@ -105,7 +105,10 @@
 
 <div class="container class11">
     <h2>Pipes</h2>
-    <h3>{{ pipe_text | titlecase }}</h3>
-    <h3>{{ pipe_text | lowercase }}</h3>
-    <h3>{{ pipe_text | uppercase }}</h3>
+    <h3>Titlecase Pipe: <span>{{ pipe_text | titlecase }}</span></h3>
+    <h3>Lowercase Pipe: <span>{{ pipe_text | lowercase }}</span></h3>
+    <h3>UpperCase Pipe: <span>{{ pipe_text | uppercase }}</span></h3>
+    <h3>Currency Pipe: <span>{{ pipe_price | currency: 'INR': 'symbol': '1.0-0' }}</span></h3>
+    <h3>Date Pipe: <span>{{ pipe_date | date: 'full' }}</span></h3>
+    <h3>Decimal Pipe: <span>{{ pipe_price | number: '1.0-0' }}</span></h3>
 </div>
