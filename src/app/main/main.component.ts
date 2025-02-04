@@ -6,10 +6,11 @@ import { ViewEncapsulation } from '@angular/core';
 // Custom Pipes
 import { CapitalizePipe } from '../pipes/capitalize.pipe';
 import { FilterPipe } from '../pipes/filter.pipe';
+import { TrimPipe } from '../pipes/trim.pipe';
 
 @Component({
   selector: 'app-main',
-  imports: [FormsModule, CommonModule, CapitalizePipe, FilterPipe],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
+  imports: [FormsModule, CommonModule, CapitalizePipe, FilterPipe, TrimPipe],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
   templateUrl: './main.component.html',
   styleUrl: './main.component.css',
   encapsulation: ViewEncapsulation.Emulated
@@ -122,5 +123,6 @@ export class MainComponent {
   pipe_price: number = 89000
   pipe_date = "2025-02-03"
   pipe_value = 1.12
-  arr = [10, 20, 30,"Apple", 40, 50, "Banana"]
+  arr = [10, 20, 30,"Apple", 40, 50, "Banana", true]
+  pipe_string = "I'm in Hyderabad right now"
 }
