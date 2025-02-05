@@ -7,10 +7,11 @@ import { ViewEncapsulation } from '@angular/core';
 import { CapitalizePipe } from '../pipes/capitalize.pipe';
 import { FilterPipe } from '../pipes/filter.pipe';
 import { TrimPipe } from '../pipes/trim.pipe';
+import { ArrsumPipe } from '../pipes/arrsum.pipe';
 
 @Component({
   selector: 'app-main',
-  imports: [FormsModule, CommonModule, CapitalizePipe, FilterPipe, TrimPipe],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
+  imports: [FormsModule, CommonModule, CapitalizePipe, FilterPipe, TrimPipe, ArrsumPipe],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
   templateUrl: './main.component.html',
   styleUrl: './main.component.css',
   encapsulation: ViewEncapsulation.Emulated
