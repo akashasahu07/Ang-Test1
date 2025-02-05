@@ -9,6 +9,9 @@ import { FilterPipe } from '../pipes/filter.pipe';
 import { TrimPipe } from '../pipes/trim.pipe';
 import { ArrsumPipe } from '../pipes/arrsum.pipe';
 
+// Services
+import { MessageService } from '../services/message.service';
+
 @Component({
   selector: 'app-main',
   imports: [FormsModule, CommonModule, CapitalizePipe, FilterPipe, TrimPipe, ArrsumPipe],  //NgFor is used to render the "ngFor" in template CommonModule contain all the directives ngFor, ngIf, ngSwitch instead of add 
@@ -126,4 +129,11 @@ export class MainComponent {
   pipe_value = 1.12
   arr = [10, 20, 30,"Apple", 40, 50, "Banana", true]
   pipe_string = "I'm in Hyderabad right now"
+
+  // Services
+  s_message:string = ''
+
+  getMessage(msg:MessageService) {
+    this.s_message = msg.getMessage()
+  }
 }
